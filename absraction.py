@@ -2,12 +2,12 @@ from abc import ABC, abstractmethod
 
 class Clients(ABC):
     @abstractmethod
-    def balance(self):
+    def info(self):
         pass  # Abstract method
 
 class Payment(Clients):
-    def balance(self):
-        return "self.balance"
+    def info(self):
+        return "self.name"
 
-client2 = Payment(34534)
-print(client2.balance())
+client2 = Payment()
+print(client2.info())
